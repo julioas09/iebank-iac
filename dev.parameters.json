@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "appServiceAppName": {
-            "value": "jseijas-app-bicep"
+            "value": "jseijas-app-dev-bicep"
         },
         "appServicePlanName": {
-            "value": "jseijas-app-bicep"
+            "value": "jseijas-app-dev-bicep"
         },
         "storageAccountName": {
-            "value": "jseijasstorage"
+            "value": "jseijasdevstorage"
         }
     }
 }
