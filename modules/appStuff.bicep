@@ -11,14 +11,14 @@ param environmentType string
 var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'F1'
 
 resource appServicePlan 'Microsoft.Web/serverFarms@2022-03-01' = {
-  name: appServiceAppName
+  name: appServicePlanName
   location: location
   sku: {
     name: appServicePlanSkuName
   }
 }
 resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
-name: appServicePlanName
+name: appServiceAppName
 location: location
 properties: {
   serverFarmId: appServicePlan.id
