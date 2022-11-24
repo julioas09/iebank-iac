@@ -24,7 +24,7 @@ jobs:
     steps:
 
       # Checkout code
-    - uses: actions/checkout@main
+    - uses: actions/checkout@dev
     
       # Log into Azure
     - uses: azure/login@v1
