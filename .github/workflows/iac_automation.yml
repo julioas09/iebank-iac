@@ -10,7 +10,7 @@ jobs:
       # Checkout code
     - uses: actions/checkout@main
 
-      # Lint Bicep code 
+      # Lint Bicep code h
     - name: Run Bicep linter
       run: az bicep build --file ./main.bicep
 
