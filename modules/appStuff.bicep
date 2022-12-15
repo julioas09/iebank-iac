@@ -13,7 +13,7 @@ param dbpass string
 param dbname string
 
 
-var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'F1'
+var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'P1V2'
 
 resource appServicePlan 'Microsoft.Web/serverFarms@2022-03-01' = {
   name: appServicePlanName
@@ -26,6 +26,7 @@ resource appServicePlan 'Microsoft.Web/serverFarms@2022-03-01' = {
     name: appServicePlanSkuName
   }
 }
+
 resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
 name: appServiceAppName
 location: location
